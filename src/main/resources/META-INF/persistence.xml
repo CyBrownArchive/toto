@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
-    <persistence-unit name="{{NAME}}">
+    <persistence-unit name="mypu">
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
         <properties>
             <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/{{DBNAME}}"/>
-            <property name="javax.persistence.jdbc.user" value="{{DBUSER}}"/>
-            <property name="javax.persistence.jdbc.password" value="{{DBPWD}}"/>
+            <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/jpa"/>
+            <property name="javax.persistence.jdbc.user" value="jpa"/>
+            <property name="javax.persistence.jdbc.password" value="jpa"/>
             <property name="hibernate.hbm2ddl.auto" value="create"/>
         </properties>
     </persistence-unit>
